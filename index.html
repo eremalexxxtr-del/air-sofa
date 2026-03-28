@@ -1051,20 +1051,51 @@ document.getElementById('uphone').addEventListener('input', function(){
   this.value = out;
 });
 
-/* ── Form submit ─────────────────────────────────── */
+/* ── Direct Telegram Submit (No PHP/Python needed) ── */
 document.getElementById('orderForm').addEventListener('submit', function(e){
   e.preventDefault();
+  
   const btn = this.querySelector('button[type=submit]');
+  const formData = new FormData(this);
+  
+  // Твои данные, которые мы уже проверили
+  const TOKEN = "8659714254:AAGTGwIEIhMBhDU0kP2xDYDKG8KvmMEUTF8";
+  const CHAT_ID = "981760227";
+  
+  // Собираем текст сообщения
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const pkg = formData.get('package') || 'Premium Захист';
+  
+  const text = `🔥 <b>НОВА ЗАЯВКА | AIR SOFA</b> 🔥%0A` +
+               `👤 Ім'я: <b>${name}</b>%0A` +
+               `📞 Телефон: <b>${phone}</b>%0A` +
+               `📦 Пакет: <b>${pkg}</b>%0A` +
+               `🌐 Джерело: Vercel_Landing`;
+
   btn.textContent = '⏳ Відправляємо...';
   btn.disabled = true;
 
-  fetch('send.php', {method:'POST', body: new FormData(this)})
-    .catch(()=>{})
-    .finally(()=>{
-      this.style.display = 'none';
-      document.getElementById('successState').classList.add('show');
-      document.getElementById('stickyCta').style.display = 'none';
-      document.getElementById('order').scrollIntoView({behavior:'smooth'});
+  // Прямой запрос к API Telegram
+  fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&parse_mode=html&text=${text}`)
+    .then(response => {
+      if (response.ok) {
+        // Если всё ок, показываем успех
+        document.getElementById('orderForm').style.display = 'none';
+        document.getElementById('successState').classList.add('show');
+        if(document.getElementById('stickyCta')) document.getElementById('stickyCta').style.display = 'none';
+        document.getElementById('order').scrollIntoView({behavior:'smooth'});
+      } else {
+        alert('Помилка відправки. Спробуйте ще раз або зателефонуйте нам.');
+        btn.textContent = '🛒 ОФОРМИТИ ЗАМОВЛЕННЯ';
+        btn.disabled = false;
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Сталася помилка. Перевірте інтернет.');
+      btn.textContent = '🛒 ОФОРМИТИ ЗАМОВЛЕННЯ';
+      btn.disabled = false;
     });
 });
 

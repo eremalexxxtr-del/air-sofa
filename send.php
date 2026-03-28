@@ -1,9 +1,9 @@
 <?php
 // СЮДА ВСТАВЬ ТОКЕН СВОЕГО ТЕЛЕГРАМ-БОТА
-$token = "ТВОЙ_ТОКЕН_БОТА"; 
+$token = "8659714254:AAGTGwIEIhMBhDU0kP2xDYDKG8KvmMEUTF8"; 
 
 // СЮДА ВСТАВЬ СВОЙ ID В ТЕЛЕГРАМЕ
-$chat_id = "ТВОЙ_CHAT_ID"; 
+$chat_id = "981760227"; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = strip_tags(trim($_POST['name']));
