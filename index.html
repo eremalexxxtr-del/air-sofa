@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AIR SOFA — надувне велюрове крісло з пуфом. Замовте зі знижкою 35%. Оплата при отриманні. Відправка сьогодні.">
+<title>AIR SOFA — Надувне крісло з пуфом | Знижка 35%</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════
+   ROOT & RESET
+═══════════════════════════════════════ */
+:root {
+  --bg:       #141414;
+  --bg2:      #1a1a1a;
+  --bg3:      #202020;
+  --surface:  #242424;
+  --surface2: #2c2c2c;
+  --border:   rgba(255,255,255,0.08);
+  --orange:   #ff6b1a;
+  --orange2:  #e05a10;
+  --orange-g: linear-gradient(135deg,#ff7c35,#e05010);
+  --green:    #22c55e;
+  --green-g:  linear-gradient(135deg,#28d66a,#16a34a);
+  --white:    #ffffff;
+  --gray1:    #e5e5e5;
+  --gray2:    #a0a0a0;
+  --gray3:    #555555;
+  --r:        14px;
+  --r-sm:     8px;
+  --shadow:   0 8px 40px rgba(0,0,0,0.6);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--bg);
+  color:var(--gray1);
+  line-height:1.6;
+  overflow-x:hidden;
+  font-size:16px;
+}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer}
+
+/* ═══════════════════════════════════════
+   TYPOGRAPHY
+═══════════════════════════════════════ */
+h1{font-size:clamp(1.65rem,6vw,2.8rem);font-weight:900;line-height:1.15;color:var(--white)}
+h2{font-size:clamp(1.3rem,5vw,2.1rem);font-weight:800;line-height:1.2;color:var(--white)}
+h3{font-size:clamp(1rem,3.5vw,1.25rem);font-weight:700;color:var(--white)}
+p{font-size:clamp(0.88rem,2.5vw,1rem)}
+
+.highlight{color:var(--orange)}
+.green{color:var(--green)}
+
+/* ═══════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════ */
+.wrap{max-width:600px;margin:0 auto;padding:0 18px}
+section{padding:52px 0}
+
+/* ═══════════════════════════════════════
+   TOP STRIP
+═══════════════════════════════════════ */
+.top-strip{
+  background:var(--orange-g);
+  text-align:center;
+  padding:9px 16px;
+  font-size:0.78rem;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+}
+.top-strip span{opacity:0.7;margin:0 10px}
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero{
+  background: radial-gradient(ellipse at top right, #2a1500 0%, var(--bg) 60%);
+  padding-top: 44px;
+  padding-bottom: 52px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:-120px;right:-120px;
+  width:350px;height:350px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,107,26,.1),transparent 70%);
+  pointer-events:none;
+}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,107,26,.15);
+  border:1px solid rgba(255,107,26,.35);
+  border-radius:100px;
+  padding:5px 14px;
+  font-size:0.72rem;
+  font-weight:800;
+  color:var(--orange);
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+.hero-badge::before{content:'🔥';font-size:0.9rem}
+
+.hero h1{margin-bottom:12px}
+.hero-sub{
+  color:var(--gray2);
+  font-size:clamp(0.9rem,2.8vw,1.05rem);
+  margin-bottom:28px;
+  max-width:500px;
+}
+
+/* Hero image */
+.hero-img-wrap{
+  position:relative;
+  border-radius:var(--r);
+  overflow:hidden;
+  margin-bottom:28px;
+  border:1px solid var(--border);
+}
+.hero-img-wrap img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.hero-img-badge{
+  position:absolute;top:14px;left:14px;
+  background:var(--orange-g);
+  color:#fff;
+  font-size:0.7rem;
+  font-weight:900;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:5px 12px;
+  border-radius:100px;
+}
+
+/* Price */
+.price-block{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:20px 20px;
+  margin-bottom:22px;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:14px;
+  position:relative;
+  overflow:hidden;
+}
+.price-block::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:var(--orange-g);
+}
+.price-old{font-size:0.9rem;color:var(--gray3);text-decoration:line-through;display:block}
+.price-new{
+  font-size:2.3rem;font-weight:900;color:var(--white);
+  line-height:1;display:block
+}
+.price-new sup{font-size:1rem;vertical-align:super;margin-right:2px}
+.price-discount{
+  margin-left:auto;
+  background:linear-gradient(135deg,#c0392b,#922b21);
+  color:#fff;
+  font-size:0.8rem;
+  font-weight:900;
+  padding:7px 16px;
+  border-radius:100px;
+  white-space:nowrap;
+  letter-spacing:0.04em;
+}
+
+/* Timer */
+.timer-wrap{
+  width:100%;
+  display:flex;align-items:center;gap:8px;
+  border-top:1px solid var(--border);
+  padding-top:14px;
+  margin-top:2px;
+}
+.timer-label{font-size:0.78rem;color:var(--gray2);white-space:nowrap}
+.timer-boxes{display:flex;align-items:center;gap:6px}
+.t-box{
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:4px 10px;
+  font-size:1rem;
+  font-weight:900;
+  color:var(--orange);
+  min-width:36px;
+  text-align:center;
+}
+.t-sep{color:var(--orange);font-weight:900;font-size:1.1rem}
+
+/* Buttons */
+.btn{
+  display:block;
+  width:100%;
+  padding:17px 24px;
+  border:none;
+  border-radius:var(--r-sm);
+  font-size:1rem;
+  font-weight:800;
+  letter-spacing:0.04em;
+  text-align:center;
+  transition:transform .15s,filter .15s,box-shadow .15s;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn-orange{
+  background:var(--orange-g);
+  color:#fff;
+  box-shadow:0 6px 28px rgba(255,107,26,.4);
+}
+.btn-orange:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 10px 36px rgba(255,107,26,.55)}
+.btn-orange:active{transform:translateY(0)}
+.btn-note{
+  text-align:center;
+  font-size:0.75rem;
+  color:var(--gray2);
+  margin-top:10px;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+
+/* ═══════════════════════════════════════
+   PACKAGES
+═══════════════════════════════════════ */
+.packages{background:var(--bg2)}
+.section-header{text-align:center;margin-bottom:32px}
+.section-header p{color:var(--gray2);font-size:0.9rem;margin-top:10px}
+.section-tag{
+  display:inline-block;
+  font-size:0.68rem;font-weight:800;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--orange);
+  background:rgba(255,107,26,.1);
+  border:1px solid rgba(255,107,26,.2);
+  border-radius:100px;
+  padding:4px 14px;
+  margin-bottom:12px;
+}
+
+.pkg-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+@media(max-width:400px){.pkg-grid{grid-template-columns:1fr}}
+
+.pkg-card{
+  background:var(--surface);
+  border:2px solid transparent;
+  border-radius:var(--r);
+  padding:22px 18px;
+  position:relative;
+  cursor:pointer;
+  transition:border-color .2s,transform .2s;
+  overflow:hidden;
+}
+.pkg-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:transparent;transition:background .2s;
+}
+.pkg-card:hover{transform:translateY(-3px);border-color:rgba(255,107,26,.4)}
+.pkg-card:hover::before{background:var(--orange-g)}
+
+.pkg-card.featured{
+  border-color:var(--orange);
+}
+.pkg-card.featured::before{background:var(--orange-g)}
+
+.pkg-hit{
+  position:absolute;top:14px;right:-1px;
+  background:var(--orange-g);
+  color:#fff;
+  font-size:0.58rem;font-weight:900;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:4px 14px 4px 10px;
+  border-radius:100px 0 0 100px;
+}
+
+.pkg-icon{font-size:2rem;margin-bottom:12px;display:block}
+.pkg-name{font-weight:800;color:var(--white);font-size:1rem;margin-bottom:6px}
+.pkg-items{list-style:none;margin:12px 0 16px}
+.pkg-items li{
+  font-size:0.8rem;color:var(--gray2);
+  display:flex;align-items:flex-start;gap:7px;
+  padding:4px 0;
+  border-bottom:1px solid var(--border);
+}
+.pkg-items li:last-child{border:none}
+.pkg-check{color:var(--green);font-size:0.9rem;flex-shrink:0;margin-top:1px}
+.pkg-guarantee{
+  display:inline-block;
+  background:rgba(34,197,94,.1);
+  border:1px solid rgba(34,197,94,.25);
+  border-radius:6px;
+  font-size:0.7rem;color:var(--green);
+  font-weight:700;
+  padding:4px 10px;
+  margin-bottom:14px;
+}
+.pkg-price{
+  font-size:1.5rem;font-weight:900;color:var(--white);
+  margin-bottom:14px;display:block;
+}
+.pkg-btn{
+  display:block;width:100%;
+  padding:12px 16px;
+  border:none;border-radius:var(--r-sm);
+  font-size:0.82rem;font-weight:800;
+  letter-spacing:0.04em;text-align:center;
+  cursor:pointer;transition:all .15s;
+  -webkit-tap-highlight-color:transparent;
+}
+.pkg-btn-outline{
+  background:transparent;
+  border:2px solid var(--gray3);
+  color:var(--gray2);
+}
+.pkg-btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+.pkg-btn-fill{background:var(--orange-g);color:#fff;box-shadow:0 4px 18px rgba(255,107,26,.35)}
+.pkg-btn-fill:hover{filter:brightness(1.08);transform:translateY(-1px)}
+
+/* ═══════════════════════════════════════
+   BENEFITS
+═══════════════════════════════════════ */
+.benefits{background:var(--bg)}
+.benefits-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.benefit-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:20px 16px;
+  text-align:center;
+  transition:transform .2s,border-color .2s;
+}
+.benefit-card:hover{transform:translateY(-3px);border-color:rgba(255,107,26,.35)}
+.benefit-emoji{font-size:2.2rem;margin-bottom:10px;display:block}
+.benefit-title{font-size:0.85rem;font-weight:800;color:var(--white);margin-bottom:6px}
+.benefit-desc{font-size:0.78rem;color:var(--gray2);line-height:1.55}
+
+/* ═══════════════════════════════════════
+   PHOTO GALLERY STRIP
+═══════════════════════════════════════ */
+.gallery-strip{
+  display:flex;gap:12px;
+  overflow-x:auto;
+  padding-bottom:8px;
+  scrollbar-width:none;
+  margin-top:28px;
+}
+.gallery-strip::-webkit-scrollbar{display:none}
+.gallery-strip img{
+  width:160px;height:200px;
+  object-fit:cover;
+  border-radius:var(--r-sm);
+  flex-shrink:0;
+  border:1px solid var(--border);
+}
+
+/* ═══════════════════════════════════════
+   REVIEWS
+═══════════════════════════════════════ */
+.reviews{background:var(--bg2)}
+.reviews-list{display:grid;grid-template-columns:1fr;gap:16px}
+
+.review-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  transition:transform .2s;
+}
+.review-card:hover{transform:translateY(-3px)}
+
+.review-header{
+  padding:12px 16px;
+  display:flex;align-items:center;gap:12px;
+}
+.review-header.tg{background:linear-gradient(135deg,#1e6fa8,#166090)}
+.review-header.vb{background:linear-gradient(135deg,#6d42c4,#5832a8)}
+
+.review-avatar{
+  width:46px;height:46px;border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,.25);
+  flex-shrink:0;
+}
+.review-user-name{font-weight:700;color:#fff;font-size:0.92rem}
+.review-app{font-size:0.68rem;color:rgba(255,255,255,.65);margin-top:2px}
+
+.review-body{padding:16px}
+.review-msg{
+  background:rgba(255,255,255,.05);
+  border-left:3px solid var(--orange);
+  border-radius:4px 12px 12px 12px;
+  padding:12px 14px;
+  font-size:0.88rem;
+  color:var(--gray1);
+  line-height:1.65;
+  margin-bottom:14px;
+}
+
+.review-photo {
+  width: 100%;
+  max-width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  /* Добавляем плавность для анимации */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;
+}
+
+/* Эффект при наведении на фото */
+.review-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(255, 107, 26, 0.2);
+}
+
+.review-meta{display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--gray3)}
+.review-stars{color:#f59e0b;font-size:0.8rem;letter-spacing:1px}
+.review-verified{color:var(--green);font-size:0.7rem}
+
+/* ═══════════════════════════════════════
+   TRUST
+═══════════════════════════════════════ */
+.trust{background:var(--bg)}
+.trust-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.trust-item{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:18px 20px;
+  display:flex;align-items:center;gap:16px;
+  transition:transform .2s,border-color .2s;
+}
+.trust-item:hover{transform:translateX(4px);border-color:rgba(255,107,26,.3)}
+.trust-icon{
+  width:50px;height:50px;flex-shrink:0;
+  border-radius:12px;
+  background:rgba(255,107,26,.1);
+  border:1px solid rgba(255,107,26,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;
+}
+.trust-title{font-weight:800;color:var(--white);font-size:0.9rem;margin-bottom:4px}
+.trust-desc{font-size:0.8rem;color:var(--gray2);line-height:1.5}
+
+/* ═══════════════════════════════════════
+   FORM SECTION
+═══════════════════════════════════════ */
+.form-section{
+  background:radial-gradient(ellipse at bottom left,#1f0d00,var(--bg) 70%);
+  position:relative;overflow:hidden;
+}
+.form-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:28px 22px;
+  position:relative;overflow:hidden;
+}
+.form-box::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--orange-g);
+}
+
+.form-group{margin-bottom:16px}
+.form-label{
+  display:block;font-size:0.75rem;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--gray2);margin-bottom:8px;
+}
+.form-input{
+  width:100%;
+  background:var(--bg);
+  border:1.5px solid var(--border);
+  border-radius:var(--r-sm);
+  padding:15px 16px;
+  font-family:inherit;font-size:1rem;
+  color:var(--white);outline:none;
+  transition:border-color .2s,box-shadow .2s;
+  -webkit-appearance:none;
+}
+.form-input::placeholder{color:var(--gray3)}
+.form-input:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(255,107,26,.12)}
+
+/* Pulse button */
+.pulse-button{
+  width:100%;padding:18px 24px;
+  border:none;border-radius:var(--r-sm);
+  background:var(--orange-g);
+  color:#fff;
+  font-family:inherit;font-size:1.05rem;font-weight:900;
+  letter-spacing:0.05em;
+  cursor:pointer;
+  box-shadow:0 6px 30px rgba(255,107,26,.45);
+  position:relative;
+  overflow:hidden;
+  transition:transform .15s,filter .15s;
+  -webkit-tap-highlight-color:transparent;
+  margin-top:8px;
+  animation:pulseShadow 2.5s ease-in-out infinite;
+}
+.pulse-button:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.pulse-button:active{transform:translateY(0);animation:none}
+@keyframes pulseShadow{
+  0%,100%{box-shadow:0 6px 30px rgba(255,107,26,.45)}
+  50%{box-shadow:0 6px 50px rgba(255,107,26,.75)}
+}
+
+.form-privacy{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  margin-top:14px;font-size:0.75rem;color:var(--gray3);text-align:center;
+}
+.form-privacy span:first-child{color:var(--green);font-size:0.9rem}
+
+/* Success */
+.success-state{
+  display:none;text-align:center;padding:32px 16px;
+  animation:fadeUp .5s ease;
+}
+.success-state.show{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.success-emoji{font-size:3.5rem;margin-bottom:14px;display:block}
+.success-title{font-size:1.3rem;font-weight:900;color:var(--orange);margin-bottom:10px}
+.success-text{font-size:0.9rem;color:var(--gray2);line-height:1.7}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+.footer{
+  background:var(--bg);
+  border-top:1px solid var(--border);
+  padding:28px 0;text-align:center;
+}
+.footer-logo{
+  font-size:1.3rem;font-weight:900;
+  color:var(--orange);letter-spacing:.08em;
+  margin-bottom:10px;
+}
+.footer-text{font-size:0.75rem;color:var(--gray3);line-height:1.8}
+.footer-text a{color:var(--gray3);text-decoration:underline}
+
+/* ═══════════════════════════════════════
+   STICKY CTA
+═══════════════════════════════════════ */
+.sticky{
+  position:fixed;bottom:0;left:0;right:0;
+  z-index:999;
+  padding:12px 16px;
+  background:rgba(20,20,20,.96);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;gap:12px;
+  transform:translateY(100%);
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1);
+}
+.sticky.show{transform:translateY(0)}
+.sticky-prices{flex-shrink:0}
+.sticky-old{font-size:0.65rem;color:var(--gray3);text-decoration:line-through;display:block}
+.sticky-new{font-size:1.05rem;font-weight:900;color:var(--orange)}
+.sticky-btn{
+  flex:1;padding:14px 18px;
+  border:none;border-radius:var(--r-sm);
+  background:var(--orange-g);color:#fff;
+  font-family:inherit;font-size:0.82rem;font-weight:900;
+  letter-spacing:.03em;text-align:center;
+  cursor:pointer;
+  box-shadow:0 4px 20px rgba(255,107,26,.4);
+  transition:filter .15s;
+  -webkit-tap-highlight-color:transparent;
+}
+.sticky-btn:active{filter:brightness(.9)}
+
+body.sticky-open{padding-bottom:76px}
+
+/* ═══════════════════════════════════════
+   SECTION DIVIDER
+═══════════════════════════════════════ */
+.divider{
+  display:flex;align-items:center;gap:14px;
+  margin:0 auto 30px;max-width:400px;
+}
+.divider-line{flex:1;height:1px;background:var(--border)}
+.divider-dot{color:var(--orange);font-size:.9rem}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE TWEAKS
+═══════════════════════════════════════ */
+@media(min-width:480px){
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .reviews-list{grid-template-columns:1fr 1fr}
+}
+@media(min-width:600px){
+  .sticky,.sticky-open{all:unset}
+  body{padding-bottom:0!important}
+}
+/* ═══════════════════════════════════════
+   FOMO POPUP (Всплывашка покупок)
+═══════════════════════════════════════ */
+.fomo-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: var(--surface);
+  border: 1px solid var(--orange);
+  border-radius: var(--r-sm);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  z-index: 1000;
+  transform: translateX(-150%);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 320px;
+  pointer-events: none;
+}
+.fomo-popup.show {
+  transform: translateX(0);
+}
+.fomo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+.fomo-text {
+  font-size: 0.8rem;
+  color: var(--gray1);
+  line-height: 1.4;
+}
+.fomo-text strong {
+  color: var(--white);
+  font-size: 0.85rem;
+}
+.fomo-time {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--green);
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .fomo-popup {
+    bottom: 85px; 
+    left: 10px;
+    right: 10px;
+    max-width: calc(100% - 20px);
+  }
+}</style>
+</head>
+<body class="sticky-open">
+
+<!-- TOP STRIP -->
+<div class="top-strip">
+  🚀 Безкоштовна доставка Новою Поштою
+  <span>|</span>
+  💳 Оплата при отриманні
+  <span>|</span>
+  ✅ Перевірка перед оплатою
+</div>
+
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    
+    <!-- Картинка-посилання (щоб намальована кнопка працювала) -->
+    <a href="#order" style="display:block; margin-bottom: 22px;">
+      <div class="hero-img-wrap" style="margin-bottom: 0; border-color: #ff6b1a;">
+        <img src="hero-main-photo.png" alt="Air Sofa надувне крісло з пуфом">
+      </div>
+    </a>
+
+    <!-- Блок з таймером (без дублювання ціни) -->
+    <div class="price-block" style="justify-content: center; padding: 15px;">
+      <div class="timer-wrap" style="border-top: none; padding-top: 0; margin-top: 0; justify-content: center;">
+        <span class="timer-label" style="font-size: 0.9rem;">⏱ Знижка діє ще:</span>
+        <div class="timer-boxes">
+          <div class="t-box" id="th">07</div>
+          <div class="t-sep">:</div>
+          <div class="t-box" id="tm">43</div>
+          <div class="t-sep">:</div>
+          <div class="t-box" id="ts">17</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#order" class="btn btn-orange">🛒 ОФОРМИТИ ЗАМОВЛЕННЯ</a>
+    <p class="btn-note">🔒 Без передоплати &nbsp;·&nbsp; Оплата лише при отриманні</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     PACKAGES
+══════════════════════════════════ -->
+<section class="packages" id="packages">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-tag">Комплектація</div>
+      <h2>Оберіть <span class="highlight">свій пакет</span></h2>
+      <p>Кожен комплект включає крісло, пуф і доставку по Україні</p>
+    </div>
+
+    <div class="pkg-grid">
+      <!-- BASIC -->
+      <div class="pkg-card" onclick="pickPkg(this,1)">
+        <span class="pkg-icon">🛋️</span>
+        <div class="pkg-name">Базовий релакс</div>
+        <ul class="pkg-items">
+          <li><span class="pkg-check">✓</span> Надувне крісло</li>
+          <li><span class="pkg-check">✓</span> Надувний пуф</li>
+          <li><span class="pkg-check">✓</span> Ремонтний набір</li>
+          <li><span class="pkg-check">✓</span> Сумка для зберіг.</li>
+        </ul>
+        <span class="pkg-guarantee">Гарантія 14 днів</span>
+        <span class="pkg-price">1 250 грн</span>
+        <button class="pkg-btn pkg-btn-outline" onclick="goOrder(event)">Обрати</button>
+      </div>
+
+      <!-- PREMIUM (FEATURED) -->
+      <div class="pkg-card featured" onclick="pickPkg(this,2)">
+        <div class="pkg-hit">ХІТ ПРОДАЖІВ</div>
+        <span class="pkg-icon">⭐</span>
+        <div class="pkg-name" style="color:var(--orange)">Premium Захист</div>
+        <ul class="pkg-items">
+          <li><span class="pkg-check">✓</span> Надувне крісло</li>
+          <li><span class="pkg-check">✓</span> Надувний пуф</li>
+          <li><span class="pkg-check">✓</span> Ремонтний набір</li>
+          <li><span class="pkg-check">✓</span> Сумка для зберіг.</li>
+          <li><span class="pkg-check">✓</span> <strong style="color:var(--white)">Гарантія 1 рік від проколів</strong></li>
+        </ul>
+        <span class="pkg-guarantee green" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25)">🛡️ Заміна при пошкодженні</span>
+        <span class="pkg-price" style="color:var(--orange)">1 499 грн</span>
+        <button class="pkg-btn pkg-btn-fill" onclick="goOrder(event)">Обрати Premium →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     BENEFITS
+══════════════════════════════════ -->
+<section class="benefits" id="benefits">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-tag">Переваги</div>
+      <h2>Все, що робить AIR SOFA <span class="highlight">ідеальним</span></h2>
+    </div>
+    <div class="divider"><div class="divider-line"></div><div class="divider-dot">✦</div><div class="divider-line"></div></div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-emoji">💪</span>
+        <div class="benefit-title">До 100 кг</div>
+        <div class="benefit-desc">Міцний вініл та посилені шви витримують значне навантаження</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-emoji">✨</span>
+        <div class="benefit-title">Водонепроникний велюр</div>
+        <div class="benefit-desc">Флокований покрив — приємний на дотик, відштовхує воду і бруд</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-emoji">📐</span>
+        <div class="benefit-title">99×130×76 см</div>
+        <div class="benefit-desc">Ідеальні габарити для дорослої людини — достатньо місця для справжнього відпочинку</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-emoji">⚡</span>
+        <div class="benefit-title">Швидке надування</div>
+        <div class="benefit-desc">Клапан «два в одному» з широкими отворами — готово за 2 хвилини без насоса</div>
+      </div>
+    </div>
+
+   <!-- Gallery Strip -->
+<div class="gallery-strip">
+  <img src="1.jpg" alt="Air Sofa фото 1">
+  <img src="2.jpg" alt="Air Sofa фото 2">
+  <img src="3.jpg" alt="Air Sofa фото 3">
+  <img src="4.jpg" alt="Air Sofa фото 4">
+  <img src="5.jpg" alt="Air Sofa фото 5">
+</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     REVIEWS
+══════════════════════════════════ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-tag">Відгуки покупців</div>
+      <h2>Вже <span class="highlight">3 200+</span> задоволених клієнтів</h2>
+      <p>Реальні відгуки від наших покупців по всій Україні</p>
+    </div>
+
+    <div class="reviews-list">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-header vb">
+          <img class="review-avatar" src="https://placehold.co/50x50/6d42c4/fff?text=ОК" alt="Олена К.">
+          <div>
+            <div class="review-user-name">Олена К.</div>
+            <div class="review-app">💜 Viber · Харків</div>
+          </div>
+        </div>
+        <div class="review-body">
+          <div class="review-msg">Дівчата, ви не уявляєте — моя спина нарешті відпочиває! Я постійно сиджу за ноутбуком і завжди болів поперек. Купила AIR SOFA — і тепер кожен вечір в кріслі як в обіймах 😍 Велюр такий м'який, що кіт одразу зайняв половину 😄 Повністю замінила дорогий каркасний пуф!</div>
+          <img class="review-photo" src="review-cat.png" alt="Фото AIR SOFA від клієнта">
+          <div class="review-meta">
+            <div class="review-stars">★★★★★</div>
+            <span>12 берез. 2025</span>
+            <span class="review-verified">✓ Купівля підтверджена</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-header tg">
+          <img class="review-avatar" src="https://placehold.co/50x50/1e6fa8/fff?text=МП" alt="Максим П.">
+          <div>
+            <div class="review-user-name">Максим П.</div>
+            <div class="review-app">✈️ Telegram · Київ</div>
+          </div>
+        </div>
+        <div class="review-body">
+          <div class="review-msg">Взяв Premium пакет — і не пожалів ні на секунду. Гарантія на рік від проколів — це реально крутo, бо в мене двоє дітей 😅 Покриття ДУЖЕ приємне на дотик, зовсім не схоже на дешеву надувайку. Замінив старе крісло-мішок — і це небо й земля! Матеріал якісний, нічого не злізло за 2 місяці. Рекомендую!</div>
+          <div class="review-meta">
+            <div class="review-stars">★★★★★</div>
+            <span>5 квіт. 2025</span>
+            <span class="review-verified">✓ Купівля підтверджена</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-header vb">
+          <img class="review-avatar" src="https://placehold.co/50x50/6d42c4/fff?text=НВ" alt="Наталія В.">
+          <div>
+            <div class="review-user-name">Наталія В.</div>
+            <div class="review-app">💜 Viber · Дніпро</div>
+          </div>
+        </div>
+        <div class="review-body">
+          <div class="review-msg">Замовила на дачу і не очікувала такої якості за ці гроші! Це реально зручніше ніж деякі каркасні меблі за 5 тисяч. Спина не втомлюється, навіть якщо сидиш годину. Пуф для ніг — просто геніально придумано. Доставка прийшла наступного дня. Буду замовляти ще одне для чоловіка 😊</div>
+          <img class="review-photo" src="review-dacha.png" alt="Фото AIR SOFA від клієнтки">
+          <div class="review-meta">
+            <div class="review-stars">★★★★★</div>
+            <span>19 квіт. 2025</span>
+            <span class="review-verified">✓ Купівля підтверджена</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════
+     TRUST + FORM
+══════════════════════════════════ -->
+<section class="trust" id="trust">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-tag">Ваша безпека</div>
+      <h2>Купуйте <span class="highlight">без будь-якого ризику</span></h2>
+    </div>
+
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">💳</div>
+        <div>
+          <div class="trust-title">Оплата при отриманні</div>
+          <div class="trust-desc">Платите лише тоді, коли тримаєте крісло в руках на Новій Пошті</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🚀</div>
+        <div>
+          <div class="trust-title">Відправка в день замовлення</div>
+          <div class="trust-desc">Замовлення до 16:00 — відправляємо сьогодні по всій Україні</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔍</div>
+        <div>
+          <div class="trust-title">Перевірка перед оплатою</div>
+          <div class="trust-desc">Маєте право відкрити й перевірити посилку до оплати — це ваш законний захист</div>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🛡️</div>
+        <div>
+          <div class="trust-title">Гарантія повернення</div>
+          <div class="trust-desc">Якщо товар не відповідає опису — повернення без зайвих питань</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     FORM
+══════════════════════════════════ -->
+<section class="form-section" id="order">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-tag">Оформити замовлення</div>
+      <h2>Залиште заявку —<br><span class="highlight">передзвонимо за 5 хвилин</span></h2>
+      <p>Вкажіть ім'я та номер — менеджер оформить усе і відповість на питання</p>
+    </div>
+
+    <div class="form-box">
+      <!-- SUCCESS STATE -->
+      <div class="success-state" id="successState">
+        <span class="success-emoji">✅</span>
+        <div class="success-title">Заявку прийнято!</div>
+        <div class="success-text">Наш менеджер зателефонує вам протягом <strong style="color:var(--orange)">5 хвилин</strong>.<br><br>Дякуємо за вибір AIR SOFA! 🌟<br>Очікуйте на дзвінок.</div>
+      </div>
+
+      <!-- FORM -->
+      <form id="orderForm" action="send.php" method="POST">
+        <input type="hidden" name="source" value="landing_airsofa_v2">
+        <input type="hidden" name="package" id="hiddenPkg" value="Premium Захист — 1499 грн">
+
+        <div class="form-group">
+          <label class="form-label" for="uname">Ваше ім'я</label>
+          <input class="form-input" type="text" name="name" id="uname" placeholder="Введіть ваше ім'я" required autocomplete="given-name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="uphone">Номер телефону</label>
+          <input class="form-input" type="tel" name="phone" id="uphone" placeholder="+38 (0XX) XXX-XX-XX" required autocomplete="tel">
+        </div>
+
+        <button type="submit" class="pulse-button">🛒 ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+
+        <div class="form-privacy">
+          <span>🔒</span>
+          <span>Ваші дані захищені · Без спаму · Без передоплати</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-logo">AIR SOFA ✦</div>
+    <div class="footer-text">
+      © 2025 AIR SOFA. Усі права захищені.<br>
+      <a href="#">Публічна оферта</a> · <a href="#">Політика конфіденційності</a><br><br>
+      Ціни вказані з урахуванням поточної акції та можуть змінюватись.
+    </div>
+  </div>
+</footer>
+<!-- FOMO POPUP -->
+<div class="fomo-popup" id="fomoPopup">
+  <img src="1.jpg" alt="Air Sofa" class="fomo-img">
+  <div class="fomo-text">
+    <strong id="fomoName">Олександр, Київ</strong> щойно замовив(ла)<br>
+    <span style="color: var(--orange); font-weight: 700;">AIR SOFA</span>
+    <span class="fomo-time" id="fomoTime">5 хвилин тому</span>
+  </div>
+</div>
+<!-- STICKY CTA -->
+<div class="sticky" id="stickyCta">
+  <div class="sticky-prices">
+    <span class="sticky-old">1 850 грн</span>
+    <span class="sticky-new">1 250 грн</span>
+  </div>
+  <button class="sticky-btn" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+    🛒 Замовити по акції
+  </button>
+</div>
+
+<script>
+/* ── Timer ──────────────────────────────────────── */
+(function(){
+  const KEY = 'airsofa2_end';
+  let end = parseInt(localStorage.getItem(KEY)||0);
+  if(!end || end <= Date.now()){
+    end = Date.now() + (7*3600 + 43*60 + 17)*1000;
+    localStorage.setItem(KEY, end);
+  }
+  const pad = n => String(n).padStart(2,'0');
+  (function tick(){
+    const d = Math.max(0, end - Date.now());
+    document.getElementById('th').textContent = pad(Math.floor(d/3600000));
+    document.getElementById('tm').textContent = pad(Math.floor(d%3600000/60000));
+    document.getElementById('ts').textContent = pad(Math.floor(d%60000/1000));
+    if(d>0) setTimeout(tick,1000);
+  })();
+})();
+
+/* ── Sticky visibility ──────────────────────────── */
+(function(){
+  const cta = document.getElementById('stickyCta');
+  const hero = document.querySelector('.hero');
+  const check = ()=>{
+    cta.classList.toggle('show', hero.getBoundingClientRect().bottom < 0);
+  };
+  window.addEventListener('scroll', check, {passive:true});
+  check();
+})();
+
+/* ── Package pick (landing cards) ───────────────── */
+var selectedPkg = 'Premium Захист — 1499 грн';
+function pickPkg(card, n){
+  document.querySelectorAll('.pkg-card').forEach(c=>c.classList.remove('featured'));
+  card.classList.add('featured');
+  selectedPkg = n===1 ? 'Базовий релакс — 1250 грн' : 'Premium Захист — 1499 грн';
+  document.getElementById('hiddenPkg').value = selectedPkg;
+}
+function goOrder(e){
+  e.stopPropagation();
+  document.getElementById('order').scrollIntoView({behavior:'smooth'});
+}
+
+/* ── Phone formatting ────────────────────────────── */
+document.getElementById('uphone').addEventListener('input', function(){
+  let v = this.value.replace(/\D/g,'');
+  if(v.startsWith('380')) v = v.slice(2);
+  let out = '+38 ';
+  if(v.length>0) out += '(0'+v.slice(1,3);
+  if(v.length>=3) out += ') '+v.slice(3,6);
+  if(v.length>=6) out += '-'+v.slice(6,8);
+  if(v.length>=8) out += '-'+v.slice(8,10);
+  this.value = out;
+});
+
+/* ── Form submit ─────────────────────────────────── */
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const btn = this.querySelector('button[type=submit]');
+  btn.textContent = '⏳ Відправляємо...';
+  btn.disabled = true;
+
+  fetch('send.php', {method:'POST', body: new FormData(this)})
+    .catch(()=>{})
+    .finally(()=>{
+      this.style.display = 'none';
+      document.getElementById('successState').classList.add('show');
+      document.getElementById('stickyCta').style.display = 'none';
+      document.getElementById('order').scrollIntoView({behavior:'smooth'});
+    });
+});
+
+/* ── Intersection observer (card fade-in) ─────────── */
+if('IntersectionObserver' in window){
+  const els = document.querySelectorAll('.pkg-card,.benefit-card,.review-card,.trust-item');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach((en,i)=>{
+      if(en.isIntersecting){
+        setTimeout(()=>{
+          en.target.style.opacity='1';
+          en.target.style.transform='translateY(0)';
+        }, i*55);
+        obs.unobserve(en.target);
+      }
+    });
+  },{threshold:.08});
+  els.forEach(el=>{
+    el.style.opacity='0';
+    el.style.transform='translateY(18px)';
+    el.style.transition='opacity .5s ease,transform .5s ease';
+    obs.observe(el);
+  });
+}
+/* ── FOMO Fake Sales Popup ───────────────────────── */
+(function(){
+  const popup = document.getElementById('fomoPopup');
+  const nameEl = document.getElementById('fomoName');
+  const timeEl = document.getElementById('fomoTime');
+
+  const names = ['Олександр', 'Олена', 'Максим', 'Ірина', 'Сергій', 'Наталія', 'Дмитро', 'Юлія', 'Андрій', 'Вікторія', 'Богдан', 'Анна'];
+  const cities = ['Київ', 'Львів', 'Одеса', 'Дніпро', 'Харків', 'Вінниця', 'Полтава', 'Запоріжжя', 'Івано-Франківськ', 'Тернопіль', 'Кривий Ріг'];
+  
+  function getRandomItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function getRandomTime() {
+    return Math.floor(Math.random() * 45) + 2; 
+  }
+
+  function showFomo() {
+    nameEl.textContent = `${getRandomItem(names)}, ${getRandomItem(cities)}`;
+    timeEl.textContent = `${getRandomTime()} хвилин тому ✅`;
+    popup.classList.add('show');
+    setTimeout(() => { popup.classList.remove('show'); }, 5000);
+  }
+
+  setTimeout(() => {
+    showFomo();
+    setInterval(showFomo, Math.floor(Math.random() * 10000) + 15000);
+  }, 8000);
+})();</script>
+</body>
+</html>
